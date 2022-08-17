@@ -367,7 +367,7 @@ int main() {
       updateBD(root);
       break;
     case 2:
-      printf("Nome: ");
+      printf("Nome do contato que deseja deletar: ");
       scanf("%s", name);
       if (contactExists(root, name)) {
         root = delContact(root, name);
@@ -377,7 +377,7 @@ int main() {
       }
       break;
     case 3:
-      printf("Nome do Contato que deseja alterar: ");
+      printf("Nome do contato que deseja alterar: ");
       scanf("%s", name);
       if (contactExists(root, name)) {
         root = upContact(root, name);
@@ -386,7 +386,7 @@ int main() {
       }
       break;
     case 4:
-      printf("Nome do Contato que deseja inpecionar: ");
+      printf("Nome do contato que deseja inspecionar: ");
       scanf("%s", name);
       if (contactExists(root, name)) {
         printData(queryContact(root, name));
